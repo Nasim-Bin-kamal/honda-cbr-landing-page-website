@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Honda Bikes</title>
+        <title>Honda Motorcycle Bangladesh</title>
+        <!-- fav-icon  -->
+        <link rel="shortcut icon" href="images/favicon.png"
+            type="image/x-icon">
         <!-- font awesome -->
         <script src="https://kit.fontawesome.com/1e662fec97.js"
             crossorigin="anonymous"></script>
@@ -18,22 +21,101 @@
             crossorigin="anonymous">
     </head>
     <body>
-        <header>
+        <header class="honda-header-bg">
+            <!---------------
+                 nav-bar
+             ---------------->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top
+                honda-header-bg">
+                <div class="container d-flex align-items-center">
+                    <a class="navbar-brand" href="#home">
+                        <img src="images/logo.png" alt="" class="w-50">
+                    </a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link active fw-bold"
+                                    aria-current="page"
+                                    href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#products">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#prebook">Prebook</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <button class="btn honda-btn-bg text-white px-4"
+                            type="submit">Login</button>
+                    </div>
+                </div>
+            </nav>
             <!--------------------
                  banner section  
             ---------------------->
-            <section class="container bg-info">
+            <section class="container mt-5 pt-4" id="home">
                 <div class="row featurette d-flex align-items-center py-5
                     px-2 mx-auto">
                     <div class="col-sm-12 col-md-6 col-lg-6">
-                        <small>Bangladesh Honda Private limited.Top Motorcycle
+                        <small class="honda-header-text-color">Bangladesh Honda
+                            Private
+                            limited.Top Motorcycle
                             company in Bangladesh</small>
-                        <h1>Honda CBR 300R</h1>
-                        <p>The Honda Motor Company, Ltd. is a Japanese public
+                        <h1 class="text-white honda-font-size">Honda CBR 300R</h1>
+                        <p class="honda-header-text-color text-justify">The
+                            Honda Motor
+                            Company, Ltd. is a Japanese public
                             multinational conglomerate manufacturer of
                             automobiles, motorcycles, and power equipment,
                             headquartered in Minato, Tokyo, Japan.</p>
-                        <button class="btn btn-warning">Purchase</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn honda-btn-bg border-0
+                            px-5 py-2 text-white my-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Purchase
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title"
+                                            id="exampleModalLabel">Select Your
+                                            Desired Bike</h5>
+                                        <button type="button" class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <P>Hello sir.Please select your desired
+                                            bike from our latest bikes.Then
+                                            press the add to cart button.</P>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn
+                                            btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6">
@@ -48,10 +130,10 @@
             <!--------------------------
                  features bike section  
             ---------------------------->
-            <section class="container my-5">
+            <section class="container my-5" id="products">
                 <div class="text-center">
                     <h1>Fetured Bikes 2021</h1>
-                    <small>Best bike collection</small>
+                    <small class="honda-font-color">Best bike collection</small>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 p-5">
@@ -82,14 +164,17 @@
                             <img src="images/bike-1.png" class="card-img-top"
                                 alt="...">
                             <div class="card-body px-0">
-                                <h5 class="card-title">Ducati XDIAVEL S-73</h5>
-                                <p class="card-text">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to additional content. This content is a
-                                    little bit longer.</p>
+                                <h5 class="card-title">Honda CBR 1000RR</h5>
+                                <p class="card-text">The CBR1000RR, marketed in
+                                    some countries as the "Fireblade", is a 999
+                                    cc liquid-cooled four-cylinder
+                                    superbike.The 7th generation of the CBR
+                                    series.</p>
                             </div>
                             <div class="">
-                                <button class="btn btn-warning">Read More</button>
+                                <button class="btn honda-btn-bg border-0 px-3
+                                    py-2
+                                    text-white">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -99,11 +184,12 @@
                             <img src="images/bike-2.png" class="card-img-top"
                                 alt="...">
                             <div class="card-body px-0">
-                                <h5 class="card-title">KTM duke-1000</h5>
-                                <p class="card-text">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to additional content. This content is a
-                                    little bit longer.</p>
+                                <h5 class="card-title">Honda CBR 300R</h5>
+                                <p class="card-text">The CBR300R returns an
+                                    insane fuel economy and has a good
+                                    range.Its 71 mpg rating, the 3.4-gallon fuel
+                                    tank affords more than 220
+                                    miles of range.</p>
                             </div>
                             <div class="">
                                 <button class="btn btn-outline-warning">Read
@@ -117,11 +203,12 @@
                             <img src="images/bike-3.png" class="card-img-top"
                                 alt="...">
                             <div class="card-body px-0">
-                                <h5 class="card-title">2021 Honda CBR500R</h5>
-                                <p class="card-text">This is a wider card with
-                                    supporting text below as a natural lead-in
-                                    to additional content. This content is a
-                                    little bit longer.</p>
+                                <h5 class="card-title">2021 Honda CBR600R</h5>
+                                <p class="card-text">This is a fast bike, and
+                                    while it may not be pretty, the riders of
+                                    its competitor bikes will get very
+                                    acquainted with how the 600RR looks from
+                                    behind.</p>
                             </div>
                             <div class="">
                                 <button class="btn btn-outline-warning">Read
@@ -134,8 +221,8 @@
             <!------------------------
                  happy client section 
              ------------------------->
-            <section class="container my-5">
-                <h2 class="text-center">Happy <span class="text-warning">Clients
+            <section class="container my-5" id="about">
+                <h2 class="text-center">Happy <span class="honda-font-color">Clients
                         says</span></h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4 my-3 mx-auto">
                     <div class="col-sm-12 col-md-6 col-lg-4">
@@ -150,17 +237,18 @@
                                     goal for the month and year.</p>
                             </div>
                             <div class="text-center">
-                                <div>
+                                <div class="honda-font-color">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
 
                                 </div>
                                 <div>
-                                    <small>Regina Miles</small><br>
-                                    <small>Banker</small>
+                                    <small class="text-info fw-bold">Regina
+                                        Miles</small><br>
+                                    <small class="fw-bold">Banker</small>
                                 </div>
 
                             </div>
@@ -178,17 +266,17 @@
                                     goal for the month and year.</p>
                             </div>
                             <div class="text-center">
-                                <div>
+                                <div class="honda-font-color">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
 
                                 </div>
                                 <div>
-                                    <small>Regina Miles</small><br>
-                                    <small>Banker</small>
+                                    <small class="text-info fw-bold">Leo Noah</small><br>
+                                    <small class="fw-bold">Student</small>
                                 </div>
 
                             </div>
@@ -207,19 +295,19 @@
                                     goal for the month and year.</p>
                             </div>
                             <div class="text-center">
-                                <div>
+                                <div class="honda-font-color">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
 
                                 </div>
                                 <div>
-                                    <small>Regina Miles</small><br>
-                                    <small>Banker</small>
+                                    <small class="text-info fw-bold">Oliver
+                                        Oscar</small><br>
+                                    <small class="fw-bold">Engineer</small>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -229,18 +317,17 @@
                  frequently asked question section  
             --------------------------------------->
             <section class="container">
-                <h2 class="text-center">Frequently <span class="text-warning">Asked
-                        Questions</span></h2>
-                <div class="row featurette d-flex align-items-center my-5
+                <h2 class="text-center">Frequently Asked <span
+                        class="honda-font-color">Questions</span></h2>
+                <div class="row featurette d-flex align-items-center my-3
                     mx-auto">
-                    <div class="col-sm-12 col-md-6 col-lg-6
-                        justify-content-center">
-                        <img class="w-75 my-3 mx-auto"
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <img class="img-fluid py-5 p-md-5 p-lg-5 mx-auto"
                             src="images/faq.png"
                             alt="">
                     </div>
                     <!-- accordian part -->
-                    <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item mb-4 rounded-3 border
                                 border-3">
@@ -363,8 +450,204 @@
                     </div>
                 </div>
             </section>
+            <!-----------------------
+                upcoming bike section  
+            ------------------------->
+            <section class="container">
+                <h2 class="text-center text-uppercase">Upcoming Bikes
+                    2021</h2>
+                <hr class="featurette-divider">
+
+                <div class="row featurette py-3 mx-auto d-flex
+                    align-items-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div id="carouselExampleControls" class="carousel slide"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/bike-1.png" class="d-block
+                                        w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/bike-2.png" class="d-block
+                                        w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/bike-3.png" class="d-block
+                                        w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"
+                                    aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="w-100 py-5">
+                            <div class="shadow-lg rounded-3 mb-3 p-3
+                                honda-border-color">
+                                <div>
+                                    <h4>Honda CBR 300R</h4>
+                                    <p>The CBR300R returns an insane fuel
+                                        economy and has a pretty good range.
+                                        Thanks to its 71 mpg rating, the
+                                        3.4-gallon fuel tank affords more than
+                                        220 miles of range.</p>
+                                </div>
+                            </div>
+                            <div class="shadow-lg rounded-3 mb-3 p-3
+                                honda-border-color">
+                                <div>
+                                    <h4>Honda CBR 600</h4>
+                                    <p>This is a fast bike, and while it may not
+                                        be pretty, the riders of its competitor
+                                        bikes will get very acquainted with how
+                                        the 600RR looks from behind.</p>
+                                </div>
+                            </div>
+                            <div class="shadow-lg rounded-3 p-3
+                                honda-border-color">
+                                <div>
+                                    <h4>Honda CBR 1000 go?</h4>
+                                    <p>The CBR1000RR, marketed in some countries
+                                        as the "Fireblade", is a 999 cc
+                                        liquid-cooled inline four-cylinder
+                                        superbike. The 7th generation of the CBR
+                                        series.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+            </section>
+            <!----------------------------
+                 prebook form section 
+            ----------------------------->
+            <section class="container my-5 mx-auto" id="prebook">
+                <div class="text-center py-2">
+                    <h2 class="honda-font-color">Prebook Now</h2>
+                    <h5 class="fst-italic">If you want to prebook upcoming
+                        bikes, please fill the
+                        form
+                        first.</h5>
+                </div>
+
+                <div class="row py-5 px-2 honda-header-bg rounded-3">
+                    <div class="col-sm-8 col-md-8 col-lg-8 mx-auto">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label
+                                    text-white">First
+                                    Name</label>
+                                <input type="email" class="form-control"
+                                    id="inputName"
+                                    placeholder="Enter your first name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label
+                                    text-white">Last
+                                    Name</label>
+                                <input type="text" class="form-control"
+                                    id="inputName"
+                                    placeholder="Enter your last name">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputEmail" class="form-label
+                                    text-white">Email</label>
+                                <input type="email" class="form-control"
+                                    id="inputEmail"
+                                    placeholder="Enter a valid email">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label
+                                    text-white">Address</label>
+                                <input type="text" class="form-control"
+                                    id="inputAddress"
+                                    placeholder="Enter your address">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label
+                                    text-white">City</label>
+                                <input type="text" class="form-control"
+                                    id="inputCity"
+                                    placeholder="Enter Your City Name">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label
+                                    text-white">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose</option>
+                                    <option>Dhaka</option>
+                                    <option>Chittagong</option>
+                                    <option>Barisal</option>
+                                    <option>Jossore</option>
+                                    <option>Khulna</option>
+                                    <option>Rajshahi</option>
+                                    <option>Sylhet</option>
+                                    <option>Rongpur</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label
+                                    text-white">Zip</label>
+                                <input type="text" class="form-control"
+                                    id="inputZip">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputpassword" class="form-label
+                                    text-white">Password</label>
+                                <input type="password" class="form-control"
+                                    id="inputZip"
+                                    placeholder="Input a password">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputpassword" class="form-label
+                                    text-white">Re
+                                    enter Password</label>
+                                <input type="password" class="form-control"
+                                    id="inputZip"
+                                    placeholder="Re enter your password">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input"
+                                        type="checkbox"
+                                        id="gridCheck">
+                                    <label class="form-check-label text-white"
+                                        for="gridCheck">
+                                        All the informatio is correct.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success fw-bold
+                                    text-uppercase"
+                                    type="button">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
         </main>
-        <footer></footer>
+        <footer class="text-center py-4 bg-dark text-white mx-auto fw-light">
+            <small>&COPY; Copyright 2021 | Bangladesh Honda
+                Private Ltd.</small>
+        </footer>
         <!-- JavaScript Bundle with Popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

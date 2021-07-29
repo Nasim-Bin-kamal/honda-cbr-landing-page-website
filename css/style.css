@@ -1,10 +1,31 @@
 /* fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
 /* common styles or utilities */
 h1,
 body {
   font-family: "Poppins", sans-serif;
 }
+.honda-header-bg {
+  background-color: #264653;
+}
+.honda-font-size {
+  font-size: 48px;
+}
+.honda-header-text-color {
+  color: #e0e0e0;
+}
+.honda-btn-bg {
+  background-image: linear-gradient(180deg, #e76f51 0%, #e76f51 100%);
+}
+.honda-font-color {
+  color: #e76f51;
+  font-weight: 600;
+}
 .img-grayscale {
   filter: grayscale(100%);
+}
+.honda-border-color {
+  border: 3px solid #e76f51;
+  border-radius: 10px;
 }
