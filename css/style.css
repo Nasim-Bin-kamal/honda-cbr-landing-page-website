@@ -1,6 +1,10 @@
 /* fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 /* common styles or utilities */
+h1,
 body {
   font-family: "Poppins", sans-serif;
+}
+.img-grayscale {
+  filter: grayscale(100%);
 }
